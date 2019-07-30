@@ -137,6 +137,7 @@ QT_CONFIG_FLAGS += " \
     -no-pch \
     -no-rpath \
     -pkg-config \
+    -no-qpa-platform-guard \
     ${PACKAGECONFIG_CONFARGS} \
 "
 
