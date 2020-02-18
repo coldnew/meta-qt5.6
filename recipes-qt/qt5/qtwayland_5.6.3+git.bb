@@ -15,7 +15,7 @@ LIC_FILES_CHKSUM = " \
 # explicitly, because it's native wayland-scanner we're looking for
 # libxkbcommon isn't mandatory make it easier to remove by .bbappend
 # (e.g. for building qtwayland with danny which doesn't have libxkbcommon in oe-core).
-XKB_DEPENDS = "libxkbcommon xproto"
+XKB_DEPENDS = "libxkbcommon xcb-proto"
 DEPENDS += "qtbase qtdeclarative wayland wayland-native qtwayland-native ${XKB_DEPENDS}"
 
 QT_WAYLAND_CONFIG ?= "wayland-compositor"
